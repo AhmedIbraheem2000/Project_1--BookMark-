@@ -1,0 +1,39 @@
+*{
+    padding:0; 
+    margin:0;
+}
+body{
+    background-color:#f7ecde;
+}
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 265px;
+    height: 20px;
+    top: 40px;
+    background-color:#f7bf76;
+    z-index: -1;
+    transition: 0.4s;
+    
+}
+h1:hover::before{
+    top: 8%;
+    height: 60px;
+}
+
+    .title{
+        font-family: "Pacifico", cursive;
+    }
+hr{
+    border:1px  dashed black;
+}
+.title{
+    background-image: linear-gradient(to right , green   ,rgba(194, 194, 11, 0.655)   );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css file/all.min.css">
+    <link rel="stylesheet" href="./css file/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css file/Style.css">  
+    <title>BookMark</title>
+</head>
+<body>
+    
+        <h1 class=" text-center mt-4 position-relative ">Bookmarker</h1>
+        <hr class="mt-5">
+        <div class="bookMark-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-bookmark fs-4"></i>
+                        <h3 class="ps-3 pe-3">Bookmark your favorite sites</h3>
+                        <i class="fa-solid fa-bookmark  fs-4"></i>
+                    </div>
+                    <div class="Bookmarker-input pt-5">
+                        <div class="bookName">
+                            <label for=""><i class="fa-solid fa-book"></i><span class="fw-bold ps-2">Site Name</span></label>
+                            <input class="form-control mt-1" placeholder="Book mark name" id="siteName" type="text" onkeyup="regexName()">
+                        </div>
+                        <div class="bookurl mt-4">
+                            <label for=""><i class="fa-solid fa-link"></i><span class="fw-bold ps-2">Site Url</span></label>
+                            <input class="form-control mt-1" placeholder="Website url " id="siteUrl" type="text">
+                            
+                        </div>
+                        <button class="btn btn-danger d-block  m-auto ps-5 pe-5 mt-4 rounded rounded-5 fw-bold shadow" disabled  id="submitData" onclick="addBook()">
+                            Submit
+                        </button>
+                        <button class="btn btn-info text-light d-block  m-auto ps-5 pe-5 mt-4 rounded rounded-5 fw-bold shadow d-none" id="editData" onclick="edit()">
+                            Edit
+                        </button>
+                    </div>
+                    <hr>
+                    <input type="text" id="searchData" class="form-control w-50 rounded-4 mx-auto" placeholder="Searc by Name Book" onkeyup="search()">
+                </div>
+            </div>
+                    
+            <div class="BookMark-table">
+                <table class="table table-dark table-bordered  mt-3 text-center shadow">
+                    <thead>
+                        <th>Index</th>
+                        <th>Website name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                        <th>Update</th>
+                    </thead>
+                    <tbody id="dataBody" class="fw-bold">
+                            <!-- <tr>
+                                <td>0</td>
+                                <td>Book</td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-success ">
+                                        <i class="fa-solid fa-eye"></i><span class="ps-2">Visit</span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-danger">
+                                        <i class="fa-solid fa-trash"></i><span  class="ps-2">Delete</span>
+                                    </a>
+                                </td>
+                        </tr>  -->
+                    </tbody>
+                    </table>
+            </div>
+        </div>
+        </div>
+    <script src="./js file/bootstrap.bundle.js"></script>
+    <script src="./js file/main.js"></script>
+</body>
+</html>
